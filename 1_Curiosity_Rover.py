@@ -10,7 +10,7 @@ from io import BytesIO
 # Set page config
 st.set_page_config(page_title="Mars Rover Images", page_icon=":computer:")
 
-st.sidebar.success("Please select a page Above.")
+
 
 # ### Teil 1:   *Überschrift:* Entdecke die Oberfläche des Mars  *Text:*  
 # Hallo, Weltraumforscher! Klick dich durch atemberaubende Aufnahmen des Mars und erfahre 
@@ -21,11 +21,11 @@ st.sidebar.success("Please select a page Above.")
 
 st.title('MarsEntdecker')
 
-#image = open("bwl_ien.png", "rb").read()
+image = open("bwl_ien.png", "rb").read()
 colx, coly = st.columns([2, 7])
 # Display the image in the first column
 with colx:
-    #st.image(image, caption='BWLien', use_column_width=True)
+    st.image(image, caption='BWLien', use_column_width=True)
     st.write("test")
 # Display text in the second column
 with coly:
