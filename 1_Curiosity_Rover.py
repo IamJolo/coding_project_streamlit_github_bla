@@ -10,7 +10,7 @@ from io import BytesIO
 # Set page config
 st.set_page_config(page_title="Mars Rover Images", page_icon=":computer:")
 
-
+st.sidebar.success("Please select a page Above.")
 
 # ### Teil 1:   *Überschrift:* Entdecke die Oberfläche des Mars  *Text:*  
 # Hallo, Weltraumforscher! Klick dich durch atemberaubende Aufnahmen des Mars und erfahre 
