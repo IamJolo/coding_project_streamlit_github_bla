@@ -54,11 +54,12 @@ def check_answer(max_air_temp, user_answer):
 
 
 st.title("Werde zum Mars-Wetterforscher")
-image = open("bwl_ien.png", "rb").read()
+#image = open("bwl_ien.png", "rb").read()
 colx, coly = st.columns([2, 7])
 # Display the image in the first column
 with colx:
-    st.image(image, caption='BWLien', use_column_width=True)
+    #st.image(image, caption='BWLien', use_column_width=True)
+    st.write("test")
 # Display text in the second column
 with coly:
     st.write("""Willkommen im Mars-Wetterlabor, kleiner Wissenschaftler! 
