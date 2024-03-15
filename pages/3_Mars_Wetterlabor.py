@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-df = pd.read_csv('coding_project_streamlit_github/REMS_Mars_Dataset.csv')
+df = pd.read_csv('REMS_Mars_Dataset.csv')
 
 df['earth_date_time'] = pd.to_datetime(df['earth_date_time'].str.split(' ').str[1])
 df['sol_number'] = df['sol_number'].str.split(' ').str[1].astype(int)
@@ -54,7 +54,7 @@ def check_answer(max_air_temp, user_answer):
 
 
 st.title("Werde zum Mars-Wetterforscher")
-image = open("coding_project_streamlit_github/bwl_ien.png", "rb").read()
+image = open("bwl_ien.png", "rb").read()
 colx, coly = st.columns([2, 7])
 # Display the image in the first column
 with colx:

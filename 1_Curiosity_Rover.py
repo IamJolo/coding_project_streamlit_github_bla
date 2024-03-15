@@ -21,7 +21,7 @@ st.set_page_config(page_title="Mars Rover Images", page_icon=":computer:")
 
 st.title('MarsEntdecker')
 
-image = open("coding_project_streamlit_github/bwl_ien.png", "rb").read()
+image = open("bwl_ien.png", "rb").read()
 colx, coly = st.columns([2, 7])
 # Display the image in the first column
 with colx:
